@@ -1,0 +1,293 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+/*----------------------------------------menu---------------------------------------------*/
+.menu{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+.menu ul {
+    list-style:none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    padding: 0;
+}
+.menu ul li { display: inline; }
+.menu ul li a {
+    color: black;
+    padding: 15px 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.menu ul li a:hover{color: #ac0000;}
+
+.inicio{
+    padding: 4.2% 4% 0 5%;
+}
+.logoIndex{
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90px;
+    padding: 10px;
+    border-radius: 0 0 25% 25%;
+    position: fixed;
+}
+/*----------------------------------------menu---------------------------------------------*/
+
+
+/*----------------------------------------index---------------------------------------------*/
+h1{
+    font-size: 53px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.6em;
+    text-transform: uppercase;
+}
+
+#restaurante{
+  text-align: center;
+  padding-left: 27.5%;
+  height: 370px;
+}
+/*----------------galeria-----------------------*/
+.galeria {
+    width: 60%;
+    position: relative;
+  }
+    @media (min-width: 480px) {
+        .gallery-container {
+          margin: auto;
+        }
+    }
+
+  .mySlides {
+    display: none;
+  }
+
+  /*----------------botao-----------------------*/
+  #botao{
+    padding-top: 30%;
+    position: absolute;
+    width: 100%;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: relative;
+    padding: 17px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s ease;
+    background-color: rgba(0,0,0,0.3);
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .prev{
+    right: 40%;
+  }
+  .next{
+    left: 40%;
+  }
+ /*----------------botao-----------------------*/
+  
+ 
+ .imgslide {
+    width: 100%;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 5px 12px;
+    position: absolute;
+    top: 0;
+    background-color: black;
+  }
+  @media (max-width: 768px) {
+    .numbertext {
+      top: 15px;
+    }
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  @-webkit-keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+  }
+/*----------------galeria-----------------------*/
+
+/*----------------sobre-----------------------*/
+#sobre{
+  padding-left: 25%;
+  padding-right: 27%;
+  padding-bottom: 1%;
+}
+#sobre p{
+  color: white;
+  text-align: justify;
+  font-weight: normal;
+  text-indent: 1.5em;
+  line-height: 1.6em;
+}
+#sobre p a{
+  text-decoration: none;
+  color: white;
+}
+#sobre p a:hover {
+  color:  #ac0000;
+}
+/*----------------sobre-----------------------*/
+
+/*----------------maps-----------------------*/
+.mapsout{
+  border: none;
+  padding: 0 32% 0 32%;
+}
+.mapsin{
+  border: none;
+  border-radius: 3%;
+  width: 450px;
+  height: 300px;
+}
+/*----------------maps-----------------------*/
+/*----------------------------------------index---------------------------------------------*/
+
+/*----------------------------------------cardapio---------------------------------------------*/
+.espaco{
+  height: 10px;
+}
+
+.titulocardapio h1{
+  font-size: 30px;
+  color: #ac0000;
+  text-align: left;
+  font-weight: normal;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+}
+
+
+/*----------------entradas-----------------------*/
+#entradas{
+  padding-left: 20%;
+}
+#harumaki, #missoshiru, #shimeji, #sunomono{
+  width: 70%;
+  padding: 2% 0 0 2%;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#harumaki:hover, #missoshiru:hover, #shimeji:hover, #sunomono:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.textoEntrada{
+  width: 60%;
+  padding-left: 20px;
+}
+.textoEntrada h2{
+  color: black;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.textoEntrada h2:hover{
+  color: #ac0000;
+}
+.textoEntrada p{
+  color: black;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 15px;
+  text-indent: 1.5em;
+  line-height: 1.6em;
+}
+#harumaki div, #missoshiru div, #shimeji div, #sunomono div{
+  display: inline-block;
+}
+/*----------------entradas-----------------------*/
+
+
+/*----------------sushi-----------------------*/
+
+#sushi{
+  padding-left: 20%;
+}
+#hossomaki, #uramaki, #niguiri, #gunkan, #sashimi, #hot{
+  width: 70%;
+  padding: 2% 0 0 2%;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#hossomaki:hover, #uramaki:hover, #niguiri:hover, #gunkan:hover, #sashimi:hover, #hot:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.textoSushi{
+  width: 60%;
+  padding-left: 20px;
+}
+.textoSushi h2{
+  color: black;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.textoSushi h2:hover{
+  color: #ac0000;
+}
+.textoSushi p{
+  color: black;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 15px;
+  text-indent: 1.5em;
+  line-height: 1.6em;
+}
+#hossomaki div, #uramaki div, #niguiri div, #gunkan div, #sashimi div, #hot div{
+  display: inline-block;
+}
+/*----------------sushi-----------------------*/
+
+/*----------------------------------------cardapio---------------------------------------------*/
+
+
+/*----------------------------------------rodape---------------------------------------------*/
+.rodape ul {
+    margin-bottom: 0;
+    list-style:none;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+}
+.rodape ul li { 
+    display: inline;  
+    padding: 15px;
+}
+.rodape ul li a{ 
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.facebookrodape{
+    padding-left: 60%;
+}
+/*----------------------------------------rodape---------------------------------------------*/
