@@ -6,7 +6,130 @@ body{
     background-color: black;
 }
 
-/*----------------------------------------menu---------------------------------------------*/
+
+/*----------------------------------------menuhamburguer------------------------*/
+
+.menupq{
+  background:  #CCCCCC;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  top: 10.5%;
+  right: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0  #CCCCCC, 0 0 0 0  #CCCCCC;
+  transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menuq{
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  top: 10.5%;
+  right: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0  #CCCCCC, 0 0 0 0  #CCCCCC;
+  transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menupq:hover{
+  box-shadow: 0 0 0 8px  #CCCCCC, 0 0 0 8px  #CCCCCC;
+}
+
+/*animação do menu*/ 
+input:checked ~ label .menuq {
+  box-shadow: -30px 220px 0 160px #CCCCCC, 0 0 0 0 #CCCCCC;
+}
+
+/* só aparecer o menu ao clicar*/
+input:checked ~ #menupq {
+  opacity: 1;
+}
+
+/* animação e estilo do menu*/
+#menupq {
+  position: fixed;
+  top: 40%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  opacity: 0;
+  transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
+}
+
+#menupq a {
+  color: #ac0000;
+  display: block;
+  right: -100px;
+  text-align: right;
+  margin-bottom: 1em;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+.linha {
+  position: relative;
+  display: block;
+  background: #808080;
+  width: 200px;
+  height: 2px;
+  transition: 0.5s ease-in-out;
+}
+
+
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: black;
+  width: 22px;
+  height: 2px;
+  transition: 0.5s ease-in-out;
+  top: 22px;
+  left: 11px;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: black;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -8px;
+}
+
+.hamburguer:after {
+  bottom: -8px;
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+/*----------------------------------------menuhamburguer---------------------------------*/
+
+/*-----------------------------------------------------menu---------------------------------------------*/
 .menu{
     position: fixed;
     width: 100%;
@@ -33,6 +156,7 @@ body{
 
 .inicio{
     padding: 4.2% 4% 0 5%;
+    
 }
 .logoIndex{
     text-align: left;
@@ -41,11 +165,12 @@ body{
     padding: 10px;
     border-radius: 0 0 25% 25%;
     position: fixed;
+    z-index: 9999;
 }
-/*----------------------------------------menu---------------------------------------------*/
+/*---------------------------------------------------------------menu---------------------------------------------*/
 
 
-/*----------------------------------------index---------------------------------------------*/
+/*--------------------------------------------------------------index---------------------------------------------*/
 h1{
     font-size: 53px;
     color: white;
@@ -173,9 +298,9 @@ h1{
   height: 300px;
 }
 /*----------------maps-----------------------*/
-/*----------------------------------------index---------------------------------------------*/
+/*-----------------------------------------------------------index---------------------------------------------*/
 
-/*----------------------------------------cardapio---------------------------------------------*/
+/*----------------------------------------------------------------------cardapio---------------------------------------------*/
 .espaco{
   height: 10px;
 }
@@ -268,10 +393,50 @@ h1{
 }
 /*----------------sushi-----------------------*/
 
-/*----------------------------------------cardapio---------------------------------------------*/
+/*----------------sobremesas-----------------------*/
+
+#sobremesas{
+  padding-left: 20%;
+}
+#parfait, #castella, #furutsuSando, #dorayaki{
+  width: 70%;
+  padding: 2% 0 0 2%;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#parfait:hover, #castella:hover, #furutsuSando:hover, #dorayaki:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.textoSobremesas{
+  width: 60%;
+  padding-left: 20px;
+}
+.textoSobremesas h2{
+  color: black;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.textoSobremesas h2:hover{
+  color: #ac0000;
+}
+.textoSobremesas p{
+  color: black;
+  text-align: justify;
+  font-weight: normal;
+  font-size: 15px;
+  text-indent: 1.5em;
+  line-height: 1.6em;
+}
+#parfait div, #castella div, #furutsuSando div, #dorayaki div{
+  display: inline-block;
+}
+/*----------------sobremesas-----------------------*/
+/*-------------------------------------------------------------------cardapio---------------------------------------------*/
 
 
-/*----------------------------------------rodape---------------------------------------------*/
+
+
+/*------------------------------------------------------------------rodape---------------------------------------------*/
 .rodape ul {
     margin-bottom: 0;
     list-style:none;
@@ -288,6 +453,34 @@ h1{
 }
 
 .facebookrodape{
-    padding-left: 60%;
+    padding-left: 58%;
 }
-/*----------------------------------------rodape---------------------------------------------*/
+
+/*--------------------botaotop-------------------------*/
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-radius: 65px;
+}
+.btn::after {
+  content: "▲";
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  transition: margin-top 250ms;
+}
+.btn:hover::after {
+  margin-top:-8px;
+}
+
+/*--------------------botaotop-------------------------*/
+/*------------------------------------------------------------------------rodape---------------------------------------------*/
