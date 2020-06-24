@@ -7,6 +7,12 @@
     <script type="text/javascript" src="javaScript.js"></script>
     <link href="../estilo.css" rel="stylesheet">
     <title>Reservas</title>
+
+    <script>
+        function funcao1() {
+            alert("Reserva confirmada");
+        }
+    </script>
 </head>
 
 <body>
@@ -32,31 +38,53 @@
         </section>
 
         <form name="meuForm" method="post" id="formulario">
-            <div class="box"> 
-                <h1>Formulário de Contato:</h1>
-          
-                <label> 
-                    <span>Nome Completo</span>
-                    <textarea class="message" name="feedback" id="feedback"></textarea>
+            <div class="box">
+                <h1>Dados pessoais:</h1>
+
+                <label>
+                    <span>Nome Completo:</span>
+                    <textarea class="nome"></textarea>
                 </label>
-          
                 <label>
-                    <span>Email</span>
-                    <textarea class="message" name="feedback" id="feedback"></textarea>
-                 </label>
-          
-                <label>
-                    <span>Assunto</span>
-                    <textarea class="message" name="feedback" id="feedback"></textarea>
+                    <span>Telefone:</span>
+                    <textarea class="telefone">(__) _____-____</textarea>
                 </label>
-          
                 <label>
-                     <span>Mensagem</span>
-                     <textarea class="message" name="feedback" id="feedback"></textarea>
-                </label> 
-                <input type="button" class="button" value="Enviar" />          
+                    <span>Whatsapp:</span>
+                    <textarea class="whatsapp">(__) _____-____</textarea>
+                </label>
+                <label>
+                    <span>Email:</span>
+                    <textarea class="email">_______________@_______</textarea>
+                </label>
             </div>
-        </form> 
+            <div class="box">
+                <h1>Informações da reserva:</h1>
+
+                <label>
+                    <span>Dia:</span>
+                    <textarea class="dia">__/__/____</textarea>
+                </label>
+                <label>
+                    <span>Horário:</span>
+                    <textarea class="hora">__:__</textarea>
+                </label>
+                <label>
+                    <span>Quantidade de pessoas:</span>
+                    <textarea class="quantidade"></textarea>
+                </label>
+                <label>
+                    <span>Observação:</span>
+                    <textarea class="observacao">Precisa de alguma acessibilidade?
+Possue alguma alergia?</textarea>
+                </label>
+                <div class="button">
+                    <button onclick="funcao1()"><b>Reservar</b></button>
+                    <input type="button" onclick="funcao1()" value="Exibir Alert" />
+                </div>
+            </div>
+
+        </form>
 
     </main>
 </body>

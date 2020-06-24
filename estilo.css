@@ -435,18 +435,19 @@ h1{
 
 /*-------------------------------------------------------------------reserva---------------------------------------------*/
 
-form,input,select,textarea{margin:0; padding:0; color:#ffffff;}
- 
+form,select,textarea{margin:0; padding:0; color: rgba(0, 0, 0, 0.3);}
+
 div.box {
     margin:0 auto;
-    width:500px;
+    width:600px;
     background:#222222;
     position:relative;
     border:1px solid #262626;
+    margin-bottom: 20px;
 }
  
 div.box h1 { 
-    color:#ffffff;
+    color:rgba(255, 255, 255, 0.8);
     font-size:15px;
     text-transform:uppercase;
     padding:5px 0 5px 5px;
@@ -468,45 +469,49 @@ div.box label span {
     color:#bbbbbb;
     font-size:12px;
     float:left;
-    width:100px;
+    width:120px;
     text-align:right;
-    padding:5px 20px 0 0;
+    padding:10px 20px 0 0;
 }
  
-div.box .input_text {
-    padding:10px 10px;
-    width:200px;
-    background:#262626;
+div.box .nome, div.box .telefone, div.box .whatsapp, div.box .email, div.box .dia, div.box .hora, div.box .quantidade{
+    padding:7px 20px;
+    width:380px;
+    background:rgba(255, 255, 255, 0.8);
     border-bottom: 1px double #171717;
     border-top: 1px double #171717;
     border-left:1px double #333333;
     border-right:1px double #333333;
+    height:20px;
 }
- 
-div.box .message{
-    padding:7px 7px;
-    width:350px;
-    background:#262626;
-    border-bottom: 1px double #171717;
-    border-top: 1px double #171717;
-    border-left:1px double #333333;
-    border-right:1px double #333333;
-    height:150px;
+
+div.box .observacao{
+  padding:7px 20px;
+  width:380px;
+  background:rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px double #171717;
+  border-top: 1px double #171717;
+  border-left:1px double #333333;
+  border-right:1px double #333333;
+  height:120px;
 }
- 
-div.box .button{
-    margin:0 0 10px 0;
-    padding:4px 7px;
-    background:#CC0000;
-    border:0px;
-    position: relative;
-    top:10px;
-    left:382px;
-    width:100px;
-    border-bottom: 1px double #660000;
-    border-top: 1px double #660000;
-    border-left:1px double #FF0033;
-    border-right:1px double #FF0033;
+
+button {
+  margin-left: 0;
+  width: 600px;
+  padding:7px 20px;
+  color: black;
+  border-bottom: 1px double #171717;
+  border-top: 1px double #171717;
+  border-left:1px double #333333;
+  border-right:1px double #333333;
+  cursor: pointer;
+  box-shadow: 0 0 0 0  #171717, 0 0 0 0  #171717;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #ac0000;
+
 }
 /*-------------------------------------------------------------------reserva---------------------------------------------*/
 
