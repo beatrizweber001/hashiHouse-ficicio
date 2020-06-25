@@ -516,6 +516,34 @@ button {
 /*-------------------------------------------------------------------reserva---------------------------------------------*/
 
 
+/*-------------------------------------------------------------------contato---------------------------------------------*/
+.iniciocontato{
+  padding: 4.15% 4% 0 5%;
+  
+}
+#textoContato li{
+  padding:5px;
+  margin:0px;
+  font-size: 20px;
+  display: block;
+  padding-left: 20%;
+  line-height: 30px;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#linksImg ul{
+  padding-left: 20%;
+  padding-top: 20px;
+}
+#linksImg ul li { 
+  display: inline;
+  display: inline-block;
+  padding-left: 30px;
+  
+}
+/*-------------------------------------------------------------------contato---------------------------------------------*/
+
+
 /*------------------------------------------------------------------rodape---------------------------------------------*/
 .rodape ul {
     margin-bottom: 0;
